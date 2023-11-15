@@ -10,12 +10,14 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Erro404 from './routes/Erro404.jsx';
 import Login from './routes/Login.jsx';
 import Home from './components/Home.jsx';
+import Cadastra from './routes/Cadastro.jsx'
 
 const router = createBrowserRouter([
   {path: "/", element: <App />, errorElement: <Erro404/>,
   children: [
     {path: "/", element: <Login/>},
-    {path: "/home", element: <Home/>}
+    {path: "/home", element: <Home/>},
+    {path: "/Cadastro", element: <Cadastra/>}
   ]},
 ]);
 
