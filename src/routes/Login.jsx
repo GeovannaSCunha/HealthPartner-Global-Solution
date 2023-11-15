@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import '../assets/styles/login.scss'
+import '../assets/styles/formulario.scss'
 
 function Login() {
   const [username, setUsername] = useState('');
