@@ -15,7 +15,7 @@ function Login() {
 
     if (users.length > 0) {
       alert('Login bem-sucedido!');
-      navigate('/Principal');
+      navigate('/Home');
     } else {
       alert('Nome de usuário ou senha incorretos.');
     }
