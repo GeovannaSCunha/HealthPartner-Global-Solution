@@ -15,6 +15,8 @@ function Login() {
 
     if (users.length > 0) {
       alert('Login bem-sucedido!');
+      const firstName = users[0].fullName.split(' ')[0]; // Obtém o primeiro nome
+      localStorage.setItem('firstName', firstName);
       navigate('/Home');
     } else {
       alert('Nome de usuário ou senha incorretos.');
