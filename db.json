@@ -1,3 +1,18 @@
 {
-    "users": []
+  "users": [
+    {
+      "email": "geovanna.scunha@gmail.com",
+      "fullName": "Geovanna Silva Cunha",
+      "username": "ge",
+      "password": "123",
+      "id": 1
+    },
+    {
+      "email": "mirella.imenez@gmail.com",
+      "fullName": "Mirella de Rossi Imenez",
+      "username": "miimenez",
+      "password": "1234",
+      "id": 2
+    }
+  ]
 }
