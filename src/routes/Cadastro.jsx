@@ -10,31 +10,35 @@ export default function Cadastra() {
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
   const navigate = useNavigate();
+
   const handleSubmit = async (event) => {
-    event.preventDefault();
-
-    if (password !== confirmPassword) {
-      alert('As senhas não correspondem.');
-      return;
-    }
-
-    fetch('http://localhost:5000/users', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({ email, fullName, username, password }),
-    })
-    .then((response) => response.json())
-    .then((data) => {
+    try {
+      event.preventDefault();
+  
+      if (password !== confirmPassword) {
+        throw new Error('As senhas não correspondem.');
+      }
+  
+      const response = await fetch('http://localhost:5000/users', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email, fullName, username, password }),
+      });
+  
+      const data = await response.json();
+  
       if (data.id) {
         alert('Usuário registrado com sucesso!');
         navigate('/');
       } else {
-        alert('Erro ao registrar usuário.');
+        throw new Error('Erro ao registrar usuário.');
       }
-    })
-    .catch((error) => console.error('Error:', error));
+    } catch (error) {
+      console.error('Erro no cadastro:', error.message);
+      alert(`Erro no cadastro: ${error.message}`);
+    }
   };
 
   return (

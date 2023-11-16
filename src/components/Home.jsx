@@ -3,24 +3,39 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import img2 from '../assets/img/img2.jpg'
 import { useEffect, useState } from 'react';
+import '../assets/styles/home.scss'
+import { useNavigate } from 'react-router-dom';
 
 function Home() {
   const [firstName, setFirstName] = useState('');
+  const navigate = useNavigate();
 
   useEffect(() => {
-    // Recupera o primeiro nome do usuário do localStorage ao carregar a página
-    const storedFirstName = localStorage.getItem('firstName');
-    if (storedFirstName) {
+    const storedFirstName = sessionStorage.getItem('firstName');
+
+    if (!storedFirstName) {
+      alert('Você não está autenticado. Por favor, faça login.');
+      navigate('/');
+    } else {
       setFirstName(storedFirstName);
     }
-  }, []);
+  }, [navigate]);
+
+  const handleLogout = () => {
+    sessionStorage.removeItem('firstName');
+    alert('Você foi desconectado.');
+    navigate('/');
+  };
 
   return (
     <Container>
       {/* Stack the columns on mobile by making one full-width and the other half-width */}
       <Row>
         <Col xs={12} md={8}>
-          <p>Bem vindo(a), {firstName}</p>
+          <div className="logout">
+            <p>Bem vindo(a), <span>{firstName}</span></p>
+            <button className='btnLogout' onClick={handleLogout}>Sair</button>
+          </div>
         </Col>
         <Col xs={6} md={4}>
           <h2>O que somos</h2>

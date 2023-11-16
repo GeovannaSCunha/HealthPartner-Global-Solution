@@ -8,20 +8,28 @@ function Login() {
   const navigate = useNavigate();
 
   const handleSubmit = async (event) => {
-    event.preventDefault();
-
-    const response = await fetch(`http://localhost:5000/users?username=${username}&password=${password}`);
-    const users = await response.json();
-
-    if (users.length > 0) {
-      alert('Login bem-sucedido!');
-      const firstName = users[0].fullName.split(' ')[0]; // Obtém o primeiro nome
-      localStorage.setItem('firstName', firstName);
-      navigate('/Home');
-    } else {
-      alert('Nome de usuário ou senha incorretos.');
+    try {
+      event.preventDefault();
+  
+      const response = await fetch(`http://localhost:5000/users?username=${username}&password=${password}`);
+      const users = await response.json();
+  
+      if (users.length > 0) {
+        const firstName = users[0].fullName.split(' ')[0];
+        sessionStorage.setItem('firstName', firstName);
+  
+        console.log('Redirecionando para /Home');
+        
+        navigate('/Home');
+      } else {
+        throw new Error('Nome de usuário ou senha incorretos.');
+      }
+    } catch (error) {
+      console.error('Erro no login:', error.message);
+      alert('Erro no login. Por favor, verifique suas credenciais.');
     }
   };
+  
 
   const handleRegister = () => {
     navigate('/Cadastro');
