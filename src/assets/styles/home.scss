@@ -13,13 +13,14 @@
         text-align: center;
     }
     .row-with-spacing {
-        margin-bottom: 5%; /* ou o valor que preferir para o espaçamento entre as linhas */
+        margin-bottom: 5%;
       }
     .parceiros{
         display: flex;
         justify-content: space-around;
         margin-top: 5%;
     }
+
 
 }
 .logout{
@@ -32,4 +33,23 @@
     span{
         color: rgb(100, 149, 237);
     }
+}
+
+@media screen and (max-width: 575px){
+    .row-with-spacing{
+        #blocos{
+            margin-top: 6%;
+        }
+    }
+
+}
+@media screen and (max-width: 767px){
+    #home{
+        #img2{
+            width: 100%;
+            margin-left: 0%;
+        }
+    }
+
+
 }
