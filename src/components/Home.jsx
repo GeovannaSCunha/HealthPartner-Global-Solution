@@ -24,19 +24,12 @@ function Home() {
     }
   }, [navigate]);
 
-  const handleLogout = () => {
-    sessionStorage.removeItem('firstName');
-    alert('Você foi desconectado.');
-    navigate('/');
-  };
-
   return (
     <Container className='container' id='home'>
       <Row className='row-with-spacing'>
         <Col sm={8}>
           <div className="logout">
             <h3>Bem vindo(a), <span>{firstName}</span>!</h3>
-            <button id='btnLogout' onClick={handleLogout}>Sair</button>
           </div>
         </Col>
         <Col sm={8}>
