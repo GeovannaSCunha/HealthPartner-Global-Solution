@@ -43,8 +43,8 @@ function Home() {
 
       <Row className='row-with-spacing'>
         <Col sm>
-          <h1 id='titSolucao'>TITULO</h1>
-          <h1 id='titSolucao'>DA SOLUÇÃO</h1>
+          <h1 id='titSolucao'>Health</h1>
+          <h1 id='titSolucao'>Partner</h1>
         </Col>
         <Col sm>
           <p>texto sobre a solução</p>
@@ -52,7 +52,7 @@ function Home() {
           <button>Mais Informações</button>
         </Col>
         <Col id='blocos' sm>
-          <h2>Nosso proposito</h2>
+          <h2>Nosso propósito</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem voluptas expedita laborum, aliquam sint unde, dolor totam, fuga eos animi commodi illum in ut repellat quae adipisci fugit distinctio aliquid!</p>
         </Col>
       </Row>

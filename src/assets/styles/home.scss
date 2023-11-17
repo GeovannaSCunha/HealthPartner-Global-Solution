@@ -21,6 +21,7 @@
         margin-top: 5%;
     }
 
+
 }
 .logout{
     display: flex;
@@ -32,4 +33,23 @@
     span{
         color: rgb(100, 149, 237);
     }
+}
+
+@media screen and (max-width: 575px){
+    .row-with-spacing{
+        #blocos{
+            margin-top: 6%;
+        }
+    }
+
+}
+@media screen and (max-width: 767px){
+    #home{
+        #img2{
+            width: 100%;
+            margin-left: 0%;
+        }
+    }
+
+
 }

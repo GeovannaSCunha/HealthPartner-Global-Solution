@@ -70,6 +70,7 @@ form {
     border-radius: 15px;
     margin-bottom:15%;
     width: 70%;
+    margin-left: -0%;
   }
   
   #formulario input {
@@ -140,4 +141,19 @@ form {
     }
   }
 
+}
+@media screen and (max-width: 1040px) {
+  .cadastro{
+    display: block;
+    justify-content: center;
+  }
+  .conteudoCadastro{
+    margin-bottom: 10%;
+    #img1{
+      width: 50%;
+    }
+  }
+  #formulario{
+    margin-left: 15%;
+  }
 }
