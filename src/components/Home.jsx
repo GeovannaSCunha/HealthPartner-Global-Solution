@@ -37,23 +37,23 @@ function Home() {
         </Col>
         <Col id='blocos' sm={4}>
           <h2>O que somos</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam quo aut modi sunt, sint maiores voluptates, blanditiis repellendus veniam error vitae iusto ipsa perferendis facere, eveniet nobis et ducimus voluptatibus?</p>
+          <p>A HealthPartner é uma plataforma criada para estimular o acompanhamento médico e autoconhecimento. Através da plataforma, você poderá realizar uma análise prévia do resultado de seus exames e realizar o monitoramento de seus sinais vitais. Essa capacidade de análise automatizada agiliza o processo diagnóstico, permitindo uma resposta mais rápida e eficaz por parte dos profissionais de saúde. </p>
         </Col>
       </Row>
 
       <Row className='row-with-spacing'>
         <Col sm>
-          <h1 id='titSolucao'>Health</h1>
-          <h1 id='titSolucao'>Partner</h1>
+          <h1 id='titSolucao'>HealthPartner: Plataforma de avaliação de exames e monitoramento de sinais vitais</h1>
+          {/* <h1 id='titSolucao'>Partner</h1> */}
         </Col>
-        <Col sm>
-          <p>texto sobre a solução</p>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta commodi quos unde cupiditate nostrum eius itaque error? Voluptas ipsa consequuntur reprehenderit ratione. Quae corrupti saepe atque voluptas doloremque nostrum necessitatibus?</p>
+        <Col id='blocosolucao'sm>
+          <p id="titsol">Nossa solução</p>
+          <p>A partir da necessidade de estimular o usuário a autoconhecer seu corpo e identificar sintomas, desenvolvemos uma plataforma capaz de analisar resultados de exames e gerar relatórios, assim como orientar sobre a necessidade de retorno urgente ou em prazo estipulado ao médico solicitante. A plataforma também realiza o armazenamento de sinais vitais em tempo real assim que vinculado ao SmartWatch do cliente, porém este armazenamento pode ser realizado manualmente pelo usuário caso seja de sua preferência.</p>
           <button>Mais Informações</button>
         </Col>
         <Col id='blocos' sm>
           <h2>Nosso propósito</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem voluptas expedita laborum, aliquam sint unde, dolor totam, fuga eos animi commodi illum in ut repellat quae adipisci fugit distinctio aliquid!</p>
+          <p>A HealthPartner faz parte da nova era da revolução digital, integrando a tecnologia aos cuidados da saúde, proporcionando avanços significativos no diagnóstico e monitoramento médico. Um exemplo notável dessa convergência é o surgimento de plataformas online especializadas na avaliação de exames e no armazenamento de sinais vitais, promovendo uma abordagem proativa à saúde </p>
         </Col>
       </Row>
       
@@ -68,7 +68,7 @@ function Home() {
         </Col>
         <Col id='blocos' sm={4}>
           <h2>Como funciona</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem voluptas expedita laborum, aliquam sint unde, dolor totam, fuga eos animi commodi illum in ut repellat quae adipisci fugit distinctio aliquid!</p>
+          <p>Esta plataforma utiliza algoritmos avançados para analisar exames médicos, desde simples análises de sangue até imagens de ressonância magnética. A inteligência artificial é empregada para identificar padrões, correlacionar dados e fornecer interpretações precisas. Você deve inserir fotos ou um anexo que contenha nitidamente o resultado de seus exames para que a plataforma realise a análise. Assim que feita a análise do resultado de seus exames, a plataforma exibe um alerta sobre a necessidade de retorno urgente ao médico solicitante ou se poderá manter o prazo de retorno solicitado normalmente.  </p>
         </Col>
       </Row>
     </Container>
