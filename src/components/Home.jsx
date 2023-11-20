@@ -43,17 +43,17 @@ function Home() {
 
       <Row className='row-with-spacing'>
         <Col sm>
-          <h1 id='titSolucao'>Health</h1>
-          <h1 id='titSolucao'>Partner</h1>
+          <h1 id='titSolucao'>HealthPartner</h1>
+          {/* <h1 id='titSolucao'>Partner</h1> */}
         </Col>
-        <Col sm>
+        <Col id='blocosolucao'sm>
           <p>Nossa solução</p>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta commodi quos unde cupiditate nostrum eius itaque error? Voluptas ipsa consequuntur reprehenderit ratione. Quae corrupti saepe atque voluptas doloremque nostrum necessitatibus?</p>
+          <p>A partir da necessidade de estimular o usuário a autoconhecer seu corpo e identificar sintomas, foi criada esta plataforma para integrar a tecnologia e automação aos cuidados e prevenções de doenças transmissíveis ou não transmissíveis. Você poderá anexar o resultado de seus exames para que seja feita a leitura e realizado um relatório prévio, a qual orienta referente ao retorno médico. Você também poderá monitorar seus sinais vitais em tempo real, vinculando seu SmartWatch ou armazenar os dados coletados manualmente. </p>
           <button>Mais Informações</button>
         </Col>
         <Col id='blocos' sm>
           <h2>Nosso propósito</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem voluptas expedita laborum, aliquam sint unde, dolor totam, fuga eos animi commodi illum in ut repellat quae adipisci fugit distinctio aliquid!</p>
+          <p>A HealthPartner faz parte da nova era da revolução digital, integrando a tecnologia aos cuidados da saúde, proporcionando avanços significativos no diagnóstico e monitoramento médico. Um exemplo notável dessa convergência é o surgimento de plataformas online especializadas na avaliação de exames e no armazenamento de sinais vitais, promovendo uma abordagem proativa à saúde </p>
         </Col>
       </Row>
       
@@ -68,7 +68,7 @@ function Home() {
         </Col>
         <Col id='blocos' sm={4}>
           <h2>Como funciona</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem voluptas expedita laborum, aliquam sint unde, dolor totam, fuga eos animi commodi illum in ut repellat quae adipisci fugit distinctio aliquid!</p>
+          <p>Esta plataforma utiliza algoritmos avançados para analisar exames médicos, desde simples análises de sangue até imagens de ressonância magnética. A inteligência artificial é empregada para identificar padrões, correlacionar dados e fornecer interpretações precisas. Você deve inserir fotos ou um anexo que contenha nitidamente o resultado de seus exames para que a plataforma realise a análise. Assim que feita a análise do resultado de seus exames, a plataforma exibe um alerta sobre a necessidade de retorno urgente ao médico solicitante ou se poderá manter o prazo de retorno solicitado normalmente.  </p>
         </Col>
       </Row>
     </Container>
