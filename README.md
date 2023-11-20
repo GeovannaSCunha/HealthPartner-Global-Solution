@@ -1,8 +1,10 @@
-# React + Vite
+## HealthPartner - Projeto de avaliação de exames e armazenamento de sinais vitais
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## > Integrantes 
+Geovanna Silva Cunha – RM 97736
+Mirella de Rossi Imenez – RM 97990
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## > Orientações
+-Para rodar o json-server, basta utilizar o comando "npm run backend" no terminal.
+-Para fazer login, você pode fazer seu cadastro ou usar um usuario que já está cadastrado: (usuário: miimenez / senha: 1234)
+-Você também poderá realizar o cadastro para acessar a plataforma.
