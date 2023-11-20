@@ -37,7 +37,7 @@ function Home() {
         </Col>
         <Col id='blocos' sm={4}>
           <h2>O que somos</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam quo aut modi sunt, sint maiores voluptates, blanditiis repellendus veniam error vitae iusto ipsa perferendis facere, eveniet nobis et ducimus voluptatibus?</p>
+          <p>A HealthPartner é uma plataforma criada para estimular o acompnhamento médico e autoconhecimento. Através da plataforma, você poderá realizar uma análise prévia do resultado de seus exames e realizar o monitoramento de seus sinais vitais </p>
         </Col>
       </Row>
 
@@ -47,7 +47,7 @@ function Home() {
           <h1 id='titSolucao'>Partner</h1>
         </Col>
         <Col sm>
-          <p>texto sobre a solução</p>
+          <p>Nossa solução</p>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta commodi quos unde cupiditate nostrum eius itaque error? Voluptas ipsa consequuntur reprehenderit ratione. Quae corrupti saepe atque voluptas doloremque nostrum necessitatibus?</p>
           <button>Mais Informações</button>
         </Col>
