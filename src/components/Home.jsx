@@ -37,18 +37,18 @@ function Home() {
         </Col>
         <Col id='blocos' sm={4}>
           <h2>O que somos</h2>
-          <p>A HealthPartner é uma plataforma criada para estimular o acompnhamento médico e autoconhecimento. Através da plataforma, você poderá realizar uma análise prévia do resultado de seus exames e realizar o monitoramento de seus sinais vitais </p>
+          <p>A HealthPartner é uma plataforma criada para estimular o acompanhamento médico e autoconhecimento. Através da plataforma, você poderá realizar uma análise prévia do resultado de seus exames e realizar o monitoramento de seus sinais vitais. Essa capacidade de análise automatizada agiliza o processo diagnóstico, permitindo uma resposta mais rápida e eficaz por parte dos profissionais de saúde. </p>
         </Col>
       </Row>
 
       <Row className='row-with-spacing'>
         <Col sm>
-          <h1 id='titSolucao'>HealthPartner</h1>
+          <h1 id='titSolucao'>HealthPartner: Plataforma de avaliação de exames e monitoramento de sinais vitais</h1>
           {/* <h1 id='titSolucao'>Partner</h1> */}
         </Col>
         <Col id='blocosolucao'sm>
-          <p>Nossa solução</p>
-          <p>A partir da necessidade de estimular o usuário a autoconhecer seu corpo e identificar sintomas, foi criada esta plataforma para integrar a tecnologia e automação aos cuidados e prevenções de doenças transmissíveis ou não transmissíveis. Você poderá anexar o resultado de seus exames para que seja feita a leitura e realizado um relatório prévio, a qual orienta referente ao retorno médico. Você também poderá monitorar seus sinais vitais em tempo real, vinculando seu SmartWatch ou armazenar os dados coletados manualmente. </p>
+          <p id="titsol">Nossa solução</p>
+          <p>A partir da necessidade de estimular o usuário a autoconhecer seu corpo e identificar sintomas, desenvolvemos uma plataforma capaz de analisar resultados de exames e gerar relatórios, assim como orientar sobre a necessidade de retorno urgente ou em prazo estipulado ao médico solicitante. A plataforma também realiza o armazenamento de sinais vitais em tempo real assim que vinculado ao SmartWatch do cliente, porém este armazenamento pode ser realizado manualmente pelo usuário caso seja de sua preferência.</p>
           <button>Mais Informações</button>
         </Col>
         <Col id='blocos' sm>
