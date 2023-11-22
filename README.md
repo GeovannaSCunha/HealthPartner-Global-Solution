@@ -8,3 +8,6 @@
 - Para rodar o json-server, basta utilizar o comando "npm run backend" no terminal.
 - Para fazer login, você pode fazer seu cadastro ou usar um usuario que já está cadastrado: (usuário: miimenez / senha: 1234)
 - Você também poderá realizar o cadastro para acessar a plataforma.
+
+##Link do Repositório
+- https://github.com/GeovannaSCunha2/HealthPartner-Global-Solution
